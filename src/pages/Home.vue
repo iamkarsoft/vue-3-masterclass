@@ -42,7 +42,6 @@
 
 <script>
 import sourceData from '@/data.json'
-import AppDate from '@/components/AppDate.vue'
 export default {
   data () {
     return {
@@ -50,9 +49,6 @@ export default {
       users: sourceData.users,
       posts: sourceData.posts
     }
-  },
-  components: {
-    AppDate
   },
   methods: {
     postById (postId) {
