@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-  <page-home></page-home>
+  <router-view></router-view>
 </div>
 </template>
 
@@ -8,10 +8,7 @@
 import PageHome from '@/components/PageHome.vue'
 
 export default {
-  name: 'App',
-  components: {
-    PageHome
-  }
+  name: 'App'
 }
 </script>
 
