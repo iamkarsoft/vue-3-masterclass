@@ -1,6 +1,6 @@
 import PageHome from '@/components/PageHome.vue'
 import PageThreadShow from '@/components/PageThreadShow'
-import NotFound from '@/components/NotFound'
+import PageNotFound from '@/components/PageNotFound'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
@@ -17,7 +17,7 @@ const routes = [
   {
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
-    component: NotFound
+    component: PageNotFound
   }
 ]
 
