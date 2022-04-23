@@ -21,19 +21,24 @@
         </div>
 
         <div class="post-date text-faded">
-          {{post.publishedAt}}
+          <!-- {{ diffForHumans(post.publishedAt) }} -->
+          <app-date :timestamp="post.publishedAt" />
         </div>
   </div>
 </template>
 
 <script>
 import sourceData from '@/data.json'
+import AppDate from '@/components/AppDate'
 export default {
   props: {
     posts: {
       type: Array,
       required: true
     }
+  },
+  components: {
+    AppDate
   },
   data () {
     return {
