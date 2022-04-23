@@ -26,7 +26,7 @@ const routes = [
       } else {
         next({
           name: 'NotFound',
-          params: { pathMatch: to.path.split('/') }
+          params: { pathMatch: to.path.substring(1).split('/') }
         })
       }
     }
