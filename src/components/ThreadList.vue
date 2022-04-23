@@ -9,7 +9,7 @@
             <a href="">{{ thread.title }}</a>
           </p>
 
-          <p class="text-faded text-xsmall">By <a href="">{{ userById(thread.userId).name }}/a>, {{ thread.publishedAt }}</p>
+          <p class="text-faded text-xsmall">By <a href="">{{ userById(thread.userId).name }}</a>, {{ thread.publishedAt }}</p>
         </div>
 
         <div class="activity">
